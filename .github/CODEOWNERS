@@ -1,0 +1,6 @@
+# Toda mudança precisa da revisão da responsável.
+*                      @ana-flavia-soares
+# Arquivos de segurança: revisão obrigatória, mesmo em mudanças pequenas.
+/supabase/             @ana-flavia-soares
+/src/crypto/           @ana-flavia-soares
+/public/_headers       @ana-flavia-soares
