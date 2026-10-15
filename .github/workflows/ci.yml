@@ -16,7 +16,7 @@ jobs:
     name: App (tipos, criptografia, build, dependências)
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -38,6 +38,6 @@ jobs:
     name: Banco (regras de segurança)
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Testes de RLS, imutabilidade e auditoria
         run: PG_BIN=/usr/lib/postgresql/16/bin bash scripts/test-db.sh
