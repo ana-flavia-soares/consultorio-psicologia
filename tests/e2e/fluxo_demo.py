@@ -78,6 +78,11 @@ async def main():
 
         # Sessão sem anotação e sem pagamento
         await pg.get_by_role('button', name='Abrir sessão').nth(1).click()
+        # Dependendo da hora em que o teste roda, a sessão ainda está agendada.
+        realizar = pg.get_by_role('button', name='Marcar como realizada')
+        if await realizar.count():
+            await realizar.click()
+            await expect(pg.get_by_role('button', name='Marcar como pago')).to_be_visible()
         await pg.locator('#anot').fill('Evolução: teste.\nProcedimentos: teste.\nEncaminhamentos: teste.')
         await pg.get_by_role('button', name='Salvar anotação').click()
         await expect(pg.get_by_text(re.compile(r'Versão 1 salva'))).to_be_visible()
