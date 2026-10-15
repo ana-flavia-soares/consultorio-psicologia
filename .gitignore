@@ -1,0 +1,7 @@
+node_modules
+dist
+.env
+.env.local
+*.age
+backups/
+.DS_Store
