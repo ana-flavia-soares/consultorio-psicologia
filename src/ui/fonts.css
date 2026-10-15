@@ -1,0 +1,19 @@
+/* Fontes servidas pelo próprio site, sem chamar o Google a cada acesso.
+   Baixe os arquivos .woff2 (licença OFL) para public/fonts/ seguindo o README.
+   Se os arquivos não estiverem lá, o sistema usa fontes do computador. */
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('/fonts/CormorantGaramond-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('/fonts/Figtree-Variable.woff2') format('woff2');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
